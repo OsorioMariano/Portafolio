@@ -1,0 +1,126 @@
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 24rem;
+}
+
+.presentacion__imagen{
+    background-image: url("../../img/personal.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.presentacion__contenido{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.presentacion__contenido-titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.presentacion__contenido-descripcion{
+    padding: 1rem 0; 
+    text-align:center;
+    line-height: 1.2rem;
+}
+
+.presentacion__contenido-enlaces{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+.item:active{
+    transform: scale(1.2);
+    transition: 10ms;
+}
+
+@media only screen and (min-width: 768px) {
+    .presentacion{
+        align-items: center;
+        flex-direction: row;
+        padding: 0 3rem;
+    }
+
+    .presentacion__imagen{
+        width: 200px;
+        height: 200px; 
+    }
+
+    .presentacion__contenido{
+        width: 65%;
+        align-items: flex-start;
+    }
+    
+    .presentacion__contenido-titulo{
+        font-size: 1.5rem;
+    }
+
+    .presentacion__contenido-descripcion{
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .presentacion__contenido-enlaces{
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    .presentacion{
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        padding: 0 5rem;
+    }
+
+    .presentacion__imagen{
+        width: 300px;
+        height: 300px;
+        margin: 0 2rem 0 auto;
+    }
+
+    .presentacion__contenido{
+        width: 65%;
+        align-items: flex-start;
+        padding-left: 3rem;
+    }
+
+    .presentacion__contenido-titulo{
+        font-size: 3rem;
+    }
+
+    .presentacion__contenido-descripcion{
+        font-size: 1.375rem;
+        line-height: 1.6rem;
+        margin: 2rem 0;
+        width: 42.5rem;
+    }
+
+    .presentacion__contenido-enlaces{
+        justify-content: start;
+        font-size: 1.2rem;
+    }
+
+    .presentacion__contenido-enlaces .item{
+        margin-right: 2rem;
+    }
+}

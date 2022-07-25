@@ -1,0 +1,38 @@
+.boton__repo{
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 2px solid #2A7AE4;
+    color: #2A7AE4;
+    font-weight: 600;
+}
+
+.boton__ver, .formulario__boton{
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #2A7AE4;
+    background-color: #2A7AE4;
+    font-weight: 600;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .boton__repo{
+        font-size: 1.2rem;
+    }
+    
+    .boton__ver, .formulario__boton{
+        font-size: 1.2rem;
+    }
+}

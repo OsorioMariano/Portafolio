@@ -1,0 +1,56 @@
+.cabecera{
+    align-items: center;
+    color: #333333;
+    display: flex;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    height: 3rem;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+
+.cabecera__persona-logo{
+    color: coral;
+    font-size: 1.2rem;
+}
+
+.cabecera__contacto{
+    font-size: 1rem;
+}
+
+.cabecera__navegador{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .cabecera__navegador{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cabecera{
+        background-color: lightblue;
+        font-size: 1.1875rem;
+        height: 4rem;
+        padding: 0 3rem ;
+        position:fixed;
+        width: 100%;
+    }
+
+    .cabecera__navegador{
+        display: block;
+        margin-left: calc(100% - 48rem);
+    }
+
+    .cabecera__navegador ul{
+        display: flex;
+    }
+
+    .cabecera__navegador li{
+        margin-left: 1.5rem;
+    }
+}
+
+
+
