@@ -42,7 +42,7 @@ botonesRepositorio.forEach( boton =>{
 
 botonesVisita.forEach( boton =>{
     boton.addEventListener("click", (event) => {
-        let indice = event.composedPath[3].dataset.tipo;
+        let indice = event.composedPath()[3].dataset.tipo;
         if(reemplazos[indice]){
             window.open(reemplazos[indice]["visita"])
         }
